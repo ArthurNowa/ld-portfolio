@@ -1,24 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Level Design</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
 </head>
 <body>
-    <nav>
-        <!-- Navbar content here -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>LD Portfolio</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <section id="carousel">
-        <!-- Carousel section content here -->
-    </section>
-    <section id="featured-projects">
-        <!-- Featured projects content here -->
-    </section>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Level Designer</h1>
+            <p>Créateur de mondes vidéoludiques immersifs</p>
+            <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="carousel-section">
+            <div class="container">
+                <h2>Portfolio Visuel</h2>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel">
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/900x400/205080/ffffff?text=Projet+1" alt="Projet 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/900x400/208050/ffffff?text=Projet+2" alt="Projet 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/900x400/a020c0/ffffff?text=Projet+3" alt="Projet 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/900x400/ffa03f/ffffff?text=Projet+4" alt="Projet 4">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+                    <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="container">
+                <h2>Projets Récents</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200/205080/ffffff?text=Projet+1" alt="Projet 1">
+                        <h3>Projet 1</h3>
+                        <p>Description courte du projet</p>
+                        <a href="ld-projects/project1.html" class="btn btn-secondary">Voir plus</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200/208050/ffffff?text=Projet+2" alt="Projet 2">
+                        <h3>Projet 2</h3>
+                        <p>Description courte du projet</p>
+                        <a href="ld-projects/project2.html" class="btn btn-secondary">Voir plus</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200/a020c0/ffffff?text=Projet+3" alt="Projet 3">
+                        <h3>Projet 3</h3>
+                        <p>Description courte du projet</p>
+                        <a href="ld-projects/project3.html" class="btn btn-secondary">Voir plus</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x200/ffa03f/ffffff?text=Projet+4" alt="Projet 4">
+                        <h3>Projet 4</h3>
+                        <p>Description courte du projet</p>
+                        <a href="ld-projects/project4.html" class="btn btn-secondary">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Intéressé par un projet?</h2>
+                <p>N'hésitez pas à me contacter pour discuter de vos idées</p>
+                <a href="contact.html" class="btn btn-primary">Me contacter</a>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <!-- Footer content here -->
+        <div class="container">
+            <p>&copy; 2026 Portfolio Level Design. Tous droits réservés.</p>
+        </div>
     </footer>
+
     <script src="js/carrousel.js"></script>
 </body>
 </html>
