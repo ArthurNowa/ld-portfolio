@@ -17,15 +17,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--dark-gray);
-    background-color: #B93E41;
-}
-
-main {
-    background-color: #B93E41;
 }
 
 .carrousel-section {
-    background-color: #B93E41;
+    color: #B93E41;
 }
 
 .container {
