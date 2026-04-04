@@ -1,26 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos</title>
+    <title>À propos - Portfolio Level Design</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>À propos</h1>
-        <section>
-            <h2>Profile Photo</h2>
-            <img src="path/to/profile-photo.jpg" alt="Profile Photo">
-        </section>
-        <section>
-            <h2>Timeline</h2>
-            <ul>
-                <li>Year 1 - Started XYZ</li>
-                <li>Year 2 - Achieved ABC</li>
-                <li>Year 3 - Completed DEF</li>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>LD Portfolio</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-header">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/profile-photo.jpg" alt="Photo de profil" class="profile-img">
+                    </div>
+                    <div class="about-text">
+                        <h1>À propos de moi</h1>
+                        <h2>[À remplir: Votre nom]</h2>
+                        <p class="subtitle">Level Designer Passionné</p>
+                        <p>
+                            [À remplir: Présentation personnelle - Quelques lignes pour vous présenter, votre passion pour le level design,
+                            ce qui vous motive et votre vision créative]
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-    </header>
+
+        <section class="journey">
+            <div class="container">
+                <h2>Mon Parcours</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>[À remplir: Année/Période]</h3>
+                            <h4>[À remplir: Événement/Formation/Projet]</h4>
+                            <p>[À remplir: Description de cette étape de votre parcours]</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>[À remplir: Année/Période]</h3>
+                            <h4>[À remplir: Événement/Formation/Projet]</h4>
+                            <p>[À remplir: Description de cette étape de votre parcours]</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>[À remplir: Année/Période]</h3>
+                            <h4>[À remplir: Événement/Formation/Projet]</h4>
+                            <p>[À remplir: Description de cette étape de votre parcours]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portfolio Level Design. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/carrousel.js"></script>
 </body>
 </html>
