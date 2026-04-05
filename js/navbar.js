@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span></span>
             </div>
             <ul class="nav-links" id="navMenu">
-                <li>nombre de '../' dans ${dir} : ${depth}</li>
                 <li><a href="${path_to_root}index.html">Accueil</a></li>
                 <li><a href="${path_to_root}about.html">À propos</a></li>
                 <li><a href="${path_to_root}projects.html">Projets</a></li>
