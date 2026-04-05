@@ -1,5 +1,8 @@
 // Navbar injection script
 document.addEventListener('DOMContentLoaded', function() {
+    var loc = window.location.pathname;
+    var dir = loc.substring(0, loc.lastIndexOf('/'));
+    var count = (loc.match('/') || []).length;
     const navbarHTML = `
     <nav class="navbar">
         <div class="container">
@@ -12,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span></span>
             </div>
             <ul class="nav-links" id="navMenu">
+                <li>nombre de '/' dans ${loc} : ${count}</li>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
                 <li><a href="projects.html">Projets</a></li>
