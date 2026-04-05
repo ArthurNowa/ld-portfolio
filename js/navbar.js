@@ -1,8 +1,10 @@
 // Navbar injection script
 document.addEventListener('DOMContentLoaded', function() {
     var loc = window.location.pathname;
-    var dir = loc.substring(0, loc.lastIndexOf('/'));
-    var depth = loc.split("/").length;
+    const root_path_length = "/ld-portfolio/".length;
+    var dir = loc.substring(loc.substring(root_path_length));
+    var depth = dir.split("/").length;
+    var path_to_root = "../".repeat(depth);
     const navbarHTML = `
     <nav class="navbar">
         <div class="container">
@@ -15,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span></span>
             </div>
             <ul class="nav-links" id="navMenu">
-                <li>nombre de '/' dans ${loc} : ${depth}</li>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projects.html">Projets</a></li>
-                <li><a href="skills.html">Compétences</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>nombre de '../' dans ${loc} : ${depth}</li>
+                <li><a href="${path_to_root}index.html">Accueil</a></li>
+                <li><a href="${path_to_root}about.html">À propos</a></li>
+                <li><a href="${path_to_root}projects.html">Projets</a></li>
+                <li><a href="${path_to_root}skills.html">Compétences</a></li>
+                <li><a href="${path_to_root}contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>`;
