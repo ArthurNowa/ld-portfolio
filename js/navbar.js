@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var loc = window.location.pathname;
     const root_path_length = "/ld-portfolio/".length;
     var dir = loc.substring(root_path_length);
-    var depth = dir.split("/").length;
+    var depth = dir.split("/").length - 1;
     var path_to_root = "../".repeat(depth);
     const navbarHTML = `
     <nav class="navbar">
