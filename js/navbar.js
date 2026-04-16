@@ -8,11 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbarHTML = `
     <nav class="navbar">
         <div class="container">
-            <div class="hamburger" onclick="toggleMenu()">
-                <span>élément 1</span>
-                <span>élément 2</span>
-                <span>élément 3</span>
-            </div>
             <ul class="nav-links" id="navMenu">
                 <li><a href="${path_to_root}index.html">Accueil</a></li>
                 <li><a href="${path_to_root}about.html">À propos</a></li>
@@ -28,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function toggleMenu() {
     const navMenu = document.getElementById('navMenu');
-    const hamburger = document.querySelector('.hamburger');
     
     if (navMenu) {
         navMenu.classList.toggle('active');
@@ -45,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 const navMenu = document.getElementById('navMenu');
-                const hamburger = document.querySelector('.hamburger');
                 if (navMenu) {
                     navMenu.classList.remove('active');
                 }
