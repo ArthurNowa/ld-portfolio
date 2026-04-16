@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbarHTML = `
     <nav class="navbar">
         <div class="container">
+            <div class="logo">
+                <h2>Arthur Nowakowski</h2>
+                <h4>Portfolio</h4>
+            </div>
             <ul class="nav-links" id="navMenu">
                 <li><a href="${path_to_root}index.html">Accueil</a></li>
                 <li><a href="${path_to_root}about.html">À propos</a></li>
