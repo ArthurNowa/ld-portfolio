@@ -80,14 +80,14 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
-    padding: 1rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero h1 {
+/*.hero h1 {
     font-size: 3.5rem;
     color: white;
     margin-bottom: 1rem;
@@ -99,7 +99,7 @@ body {
     color: white;
     margin-bottom: 1rem;
     font-weight: 700;
-}
+}*/
 
 .hero p {
     font-size: 1rem;
