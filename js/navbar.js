@@ -8,13 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbarHTML = `
     <nav class="navbar">
         <div class="container">
-            <div class="logo">
-                <h1><a href="index.html" style="color: white; text-decoration: none;">LD Portfolio</a></h1>
-            </div>
             <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span>élément 1</span>
+                <span>élément 2</span>
+                <span>élément 3</span>
             </div>
             <ul class="nav-links" id="navMenu">
                 <li><a href="${path_to_root}index.html">Accueil</a></li>
