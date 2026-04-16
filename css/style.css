@@ -81,8 +81,6 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
     padding: 1rem 2rem;
-    text-align: left;
-    color: white;
     min-height: 200px;
     display: flex;
     align-items: center;
@@ -91,18 +89,21 @@ body {
 
 .hero h1 {
     font-size: 3.5rem;
+    color: white;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .hero h3 {
     font-size: 2rem;
+    color: white;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .hero p {
     font-size: 1rem;
+    text-align: left;
     margin-bottom: 2rem;
     opacity: 0.9;
     color: #f4f4f4;
