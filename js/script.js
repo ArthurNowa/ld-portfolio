@@ -33,12 +33,15 @@ interactiveElements.forEach(element => {
 });
 
 // Image Modal - Lightbox / Pop-up
+let imageModal = null;
+let currentZoom = 1;
+
 function initImageModal() {
     // Créer le modal HTML
-    const modal = document.createElement('div');
-    modal.id = 'imageModal';
-    modal.className = 'image-modal';
-    modal.innerHTML = `
+    imageModal = document.createElement('div');
+    imageModal.id = 'imageModal';
+    imageModal.className = 'image-modal';
+    imageModal.innerHTML = `
         <div class="modal-content">
             <span class="modal-close">&times;</span>
             <img id="modalImage" src="" alt="">
@@ -49,38 +52,27 @@ function initImageModal() {
             </div>
         </div>
     `;
-    document.body.appendChild(modal);
+    document.body.appendChild(imageModal);
 
     // Variables pour le zoom
-    let currentZoom = 1;
     const minZoom = 1;
     const maxZoom = 5;
     const zoomStep = 0.2;
 
-    // Ajouter les événements aux images (sauf celles avec la classe 'no-modal')
-    const images = document.querySelectorAll('img:not(.no-modal)');
-    images.forEach(img => {
-        img.style.cursor = 'pointer';
-        img.addEventListener('click', function(e) {
-            e.stopPropagation();
-            openImageModal(this.src, this.alt);
-        });
-    });
-
     // Fonction pour ouvrir le modal
-    function openImageModal(src, alt) {
+    window.openImageZoom = function(src, alt) {
         const modalImg = document.getElementById('modalImage');
         modalImg.src = src;
-        modalImg.alt = alt;
-        modal.classList.add('active');
+        modalImg.alt = alt || '';
+        imageModal.classList.add('active');
         currentZoom = 1;
         modalImg.style.transform = 'scale(1)';
         document.body.style.overflow = 'hidden';
-    }
+    };
 
     // Fonction pour fermer le modal
     function closeImageModal() {
-        modal.classList.remove('active');
+        imageModal.classList.remove('active');
         currentZoom = 1;
         document.body.style.overflow = 'auto';
     }
@@ -108,22 +100,22 @@ function initImageModal() {
     document.querySelector('.modal-close').addEventListener('click', closeImageModal);
 
     // Fermer en cliquant en dehors de l'image
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
+    imageModal.addEventListener('click', function(e) {
+        if (e.target === imageModal) {
             closeImageModal();
         }
     });
 
     // Fermer avec la touche Escape
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && modal.classList.contains('active')) {
+        if (e.key === 'Escape' && imageModal.classList.contains('active')) {
             closeImageModal();
         }
     });
 
     // Support du zoom à la molette
-    modal.addEventListener('wheel', function(e) {
-        if (modal.classList.contains('active')) {
+    imageModal.addEventListener('wheel', function(e) {
+        if (imageModal.classList.contains('active')) {
             e.preventDefault();
             if (e.deltaY < 0) {
                 zoomImage('in');
