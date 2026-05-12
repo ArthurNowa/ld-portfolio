@@ -24,6 +24,9 @@ body {
 .project-presentation {
             padding: 2em 5em;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
             width: 100%;
             box-sizing: border-box;
 }
@@ -70,22 +73,39 @@ body {
 
 .steps {
             padding: 2em 2em 2em 5em;
+            display: flex;
+            gap: 2em;
+            align-items: center;
 }
 
 .steps p {
             color: var(--primary-blue);
             font-size: 0.8rem;
+            flex: 1;
+            min-width: 0;
+}
+
+.steps img {
+            width: 100%;
+            height: auto;
+            display: block;
+            flex: 1;
+            min-width: 0;
 }
 
 .p-even {
+            order: 1;
 }
 
 .img-even {
+            order: 2;
 }
 
-.p-ood {
+.p-odd {
+            order: 2;
 }
 
 .img-odd {
+            order: 1;
 }
 
