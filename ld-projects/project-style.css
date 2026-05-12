@@ -93,7 +93,7 @@ body {
 }
 
 .steps img {
-            width: 100%;
+            width: 80%;
             height: auto;
             display: block;
             flex: 1;
