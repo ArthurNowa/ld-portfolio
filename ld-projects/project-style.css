@@ -34,6 +34,10 @@ body {
             color: var(--primary-blue);
 }
 
+.context p {
+            padding: 2em 2em 2em 5em;
+}
+
 .left {
             float:left;
             width: 800px;
@@ -48,7 +52,7 @@ body {
 
 /*--------------------------------------------------------------*/
 
-#conception div p {
+#conception div {
             padding: 2em 2em 2em 5em;
 }
 
