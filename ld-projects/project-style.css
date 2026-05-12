@@ -49,7 +49,11 @@ body {
 /*--------------------------------------------------------------*/
 
 #conception div p {
+            padding: 2em 2em 2em 5em;
+}
+
+#conception div p {
             color: white;
             font-size: 0.8rem;
 }
-            
+
