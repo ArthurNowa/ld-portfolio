@@ -22,12 +22,13 @@ body {
 /*--------------------------------------------------------------*/
 
 .project-presentation {
-            padding: 2em 2em 2em 5em;
+            padding: 2em 5em;
             margin: 0 auto;
-            display: inline-block;
-            float: center;
-            align-items: center;
+            display: flex;
+            gap: 2em;
+            align-items: flex-start;
             width: 100%;
+            box-sizing: border-box;
 }
 
 .project-presentation h2 {
@@ -41,15 +42,25 @@ body {
 }
 
 .left {
-            float:left;
-            width: 800px;
-            align-items: center;
+            flex: 1;
+            min-width: 0;
 }
 
 .right {
-            float:right;
-            width: 800px;
-            align-items: center;
+            flex: 1;
+            min-width: 0;
+}
+
+.left h2,
+.right h2 {
+            margin-top: 0;
+}
+
+.left img,
+.right iframe {
+            width: 100%;
+            height: auto;
+            display: block;
 }
 
 /*--------------------------------------------------------------*/
