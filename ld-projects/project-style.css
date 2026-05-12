@@ -64,11 +64,16 @@ body {
             color: white;
 }
 
-.left img,
+.left img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
 .right iframe {
-            width: 80%;
-            height: 80%;
-            display: block;
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    display: block;
 }
 
 /*--------------------------------------------------------------*/
