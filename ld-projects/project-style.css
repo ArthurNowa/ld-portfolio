@@ -54,12 +54,24 @@ body {
 
 /*--------------------------------------------------------------*/
 
-#conception div {
+.steps {
             padding: 2em 2em 2em 5em;
 }
 
-#conception div p {
+.steps p {
             color: white;
             font-size: 0.8rem;
+}
+
+.p-even {
+}
+
+.img-even {
+}
+
+.p-ood {
+}
+
+.img-odd {
 }
 
