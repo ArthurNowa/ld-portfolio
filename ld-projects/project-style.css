@@ -35,7 +35,9 @@ body {
 }
 
 .context p {
-            padding: 2em 2em 2em 5em;
+            padding: 2em 2em 2em 2em;
+            color: white;
+            font-size: 0.8rem;
 }
 
 .left {
