@@ -2,34 +2,53 @@
 body {
             font-family: Arial, sans-serif;
             background-color: var(--red-brown);
-        }
-        h1 {
-            color: white;
-        }
-        h2 {
-            color: #208050;
-        }
-        .header {
+}
+
+/*--------------------------------------------------------------*/
+
+.header {
             background-color: #205080;
             padding: 20px;
             text-align: center;
-        }
+}
 
-        .project-presentation {
-            padding: 2em 0em 2em 5em;
+.header h1 {
+            color: white;
+}
+.header h2 {
+            color: #208050;
+}
+
+/*--------------------------------------------------------------*/
+
+.project-presentation {
+            padding: 2em 2em 2em 5em;
             margin: 0 auto;
             display: inline-block;
             float: center;
             align-items: center;
             width: 100%;
-        }
-        .left {
+}
+
+.project-presentation h2 {
+            color: var(--primary-blue);
+}
+
+.left {
             float:left;
             width: 800px;
             align-items: center;
-        }
-        .right {
+}
+
+.right {
             float:right;
             width: 800px;
             align-items: center;
-        }
+}
+
+/*--------------------------------------------------------------*/
+
+#conception p {
+            color: white;
+}
+            
