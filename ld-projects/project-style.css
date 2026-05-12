@@ -79,7 +79,7 @@ body {
 /*--------------------------------------------------------------*/
 
 .steps {
-            padding: 2em 2em 2em 5em;
+            padding: 2em 5em;
             display: flex;
             gap: 2em;
             align-items: center;
