@@ -51,11 +51,17 @@ body {
 .left {
             flex: 1;
             min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 }
 
 .right {
             flex: 1;
             min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 }
 
 .left h3,
