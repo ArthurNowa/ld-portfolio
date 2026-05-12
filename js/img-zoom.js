@@ -12,8 +12,6 @@ function initImageModal() {
             <span class="modal-close">&times;</span>
             <img id="modalImage" src="" alt="">
             <div class="modal-zoom-controls">
-                <button id="zoomIn" class="zoom-btn">+</button>
-                <button id="zoomOut" class="zoom-btn">−</button>
                 <button id="resetZoom" class="zoom-btn">Reset</button>
             </div>
         </div>
@@ -55,8 +53,6 @@ function initImageModal() {
     }
 
     // Événements des boutons
-    document.getElementById('zoomIn').addEventListener('click', () => zoomImage('in'));
-    document.getElementById('zoomOut').addEventListener('click', () => zoomImage('out'));
     document.getElementById('resetZoom').addEventListener('click', () => {
         currentZoom = 1;
         document.getElementById('modalImage').style.transform = 'scale(1)';
