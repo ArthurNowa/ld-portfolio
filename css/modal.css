@@ -60,6 +60,7 @@
 
 .modal-zoom-controls {
     display: flex;
+    z-index: 1;
     gap: 10px;
     margin-top: 20px;
     flex-wrap: wrap;
