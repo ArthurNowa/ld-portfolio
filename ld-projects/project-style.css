@@ -57,9 +57,10 @@ body {
             min-width: 0;
 }
 
-.left h2,
-.right h2 {
+.left h3,
+.right h3 {
             margin-top: 0;
+            color: white;
 }
 
 .left img,
