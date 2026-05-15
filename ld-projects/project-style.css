@@ -68,7 +68,7 @@ body {
             color: white;
 }
 
-.left img {
+.left img, .right img {
     width: 80%;
     height: auto;
     display: block;
