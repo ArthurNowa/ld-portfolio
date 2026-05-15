@@ -6,51 +6,7 @@
     <title>Devineuf</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="project-style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: white;
-        }
-        h2 {
-            color: #208050;
-        }
-        .header {
-            background-color: #205080;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .project-presentation {
-            margin :0 auto;
-            display:inline-block;
-            width: 800px;
-        }
-        .left {
-            float:left;
-        }
-        .right {
-            float:right;
-        }
-        #devineuf-4questions {
-            align:middle;
-            text-align:center;
-            display: block;
-            margin: 0 auto;
-            width: 65%;
-            object-position: left center;
-        }
-        .tiktok-embed {
-            width:300px;
-            position: relative;
-            padding: 0em 0em 0em 0em;
-            background: #fff;
-            border: 1px solid blue;
-            object-position: right center;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/modal.css">
 </head>
 <body>
     <script src="../js/navbar.js"></script>
@@ -60,21 +16,43 @@
     </div>
 
     <div class="project-presentation">
-        <div class="left">
-            <h4></h4>
-            <img src="../images/4-questions.png" alt="Interface du jeu" id="devineuf-4questions">
+        <div class="context">
+            <h2>Contexte du projet</h2>
+            <p>
+                Devineuf est un jeu mobile de quiz de culture générale en multijoueur local, dont le but est d'obtenir le meilleur score en trouvant pour chaque question jusqu'à 9 réponses valides pouvant donner entre 1 et 5 points selon la difficulté.<br>
+                Le jeu existait déjà lorsque je l'ai découvert en y jouant avec des amis en 2023, mais étant un grand fan de quiz et ayant plusieurs idées de questions et de fonctionnalités, j'ai rejoint le serveur discord dédié à l'appilcation et ait commencé à les proposer.<br>
+                A force de proposer toujours plus de questions et de suggestions d'améliorations, j'ai fini par sympathiser avec l'équipe de développement et l'ai rejoint en tant que content creator, ceux-ci m'ayant donné accès à la plateforme d'administration du jeu.<br>
+                A ce jour, j'ai pu ajouté près de 400 nouvelles questions à la base de donnée, et plusieurs de mes suggestions d'améliorations ont également été implémentées, ce qui m'a valu d'être cité dans les crédits du jeu.
+            </p>
         </div>
-        <div class="right">
-            <h4>Vue joueur du circuit</h4>
-            <p style="font-style: italic;">(2e circuit)</p>
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dam_tm/video/7599402198740651286" data-video-id="7599402198740651286" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@dam_tm" href="https://www.tiktok.com/@dam_tm?refer=embed">@dam_tm</a> Maps Cup EGAMES <a title="villedenevers" target="_blank" href="https://www.tiktok.com/tag/villedenevers?refer=embed">#villedenevers</a> <a title="trackmania" target="_blank" href="https://www.tiktok.com/tag/trackmania?refer=embed">#trackmania</a> <a title="competition" target="_blank" href="https://www.tiktok.com/tag/competition?refer=embed">#competition</a> <a target="_blank" title="♬ After Dark - Camila F" href="https://www.tiktok.com/music/After-Dark-7595225963689986064?refer=embed">♬ After Dark - Camila F</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <div class="side-by-side">
+            <div class="left">
+                <h4>Exemples de questions que j'ai rédigé</h4>
+                <img src="../images/4-questions.png" alt="Interface du jeu" id="devineuf-4questions">
+            </div>
+            <div class="right">
+                <h4>Présentation du jeu sur instagram</h4>
+                <img src="../images/4-questions.png" alt="Interface du jeu" id="devineuf-4questions">
+            </div>
         </div>
     </div>
-    <p>Description: [À remplir: ...]</p>
-    <p>My Role: [À remplir: ...]</p>
-    <p>Process & Methodology: [À remplir: ...]</p>
-    <p>Challenges & Solutions: [À remplir: ...]</p>
-    <p>Tools Used: [À remplir: ...]</p>
-    <p>Results & Learnings: [À remplir: ...]</p>
+    
+    <div id="conception">
+        <div class="steps">
+            <p class="p-even">
+                Lorem ipsum            
+            </p>
+            <img src="../images/nevers-gp/nevers-gp-route-prototype.png" alt="Prototype de la route du circuit Nevers GP" class="img-even" width="560" height="315" onclick="openImageZoom(this.src, this.alt)">
+        </div>
+        <div class="steps">
+            
+        </div>
+        <div class="steps">
+            
+        </div>
+        <div class="steps">
+            
+        </div>
+    </div>
 </body>
 </html>
