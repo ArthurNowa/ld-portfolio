@@ -82,6 +82,11 @@ body {
             min-width: 0;
 }
 
+.order1 h2,
+.order2 h2 {
+            color: white;
+}
+
 .step img,
 .order1 img,
 .order2 img {
