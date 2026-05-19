@@ -65,7 +65,7 @@ body {
 .left h3,
 .right h3 {
             margin-top: 0;
-            color: white;
+            color: #f4ffff;
 }
 
 .left img, .right img {
@@ -84,6 +84,7 @@ body {
 
 h3 {
             padding: 2em 5em;
+            color: white;
 }
 
 .step {
