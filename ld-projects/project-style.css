@@ -85,7 +85,8 @@ body {
 .order1 h2,
 .order2 h2 {
             color: white;
-            padding: 2em 5em;
+            padding-bottom: 2em;
+            padding-left: 5em;
 }
 
 .step img,
