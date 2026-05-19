@@ -26,7 +26,7 @@ body {
             padding: 2em 5em;
             margin: 0 auto;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 2em;
             width: 100%;
             box-sizing: border-box;
@@ -35,7 +35,7 @@ body {
 
 .left {
             flex: 1;
-            widht: 50%;
+            width: 50%;
             /*display: flex;
             justify-content: center;*/
 }
