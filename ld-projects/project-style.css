@@ -22,7 +22,7 @@ body {
 
 /*--------------------------------------------------------------*/
 
-.project-presentation {
+.presentation {
             padding: 2em 5em;
             margin: 0 auto;
             display: flex;
@@ -30,21 +30,6 @@ body {
             gap: 2em;
             width: 100%;
             box-sizing: border-box;
-}
-
-.project-presentation h2 {
-            color: white;
-}
-
-.context p {
-            padding: 2em 2em 2em 2em;
-            color: var(--primary-blue);
-            font: 1rem "Lexend", sans-serif;
-}
-
-.side-by-side {
-            display: flex;
-            gap: 2em;
             align-items: center;
 }
 
@@ -68,7 +53,8 @@ body {
             color: #f4ffff;
 }
 
-.left img, .right img {
+.left img,
+.right img {
     width: 80%;
     height: auto;
     display: block;
@@ -89,14 +75,17 @@ body {
             align-items: center;
 }
 
-.order1 p, .order2 p {
+.order1 p,
+.order2 p {
             color: var(--primary-blue);
             font: 1rem "Roboto", sans-serif;
             flex: 1;
             min-width: 0;
 }
 
-.step img, .order1 img, .order2 img {
+.step img,
+.order1 img,
+.order2 img {
             width: 80%;
             height: auto;
             display: block;
