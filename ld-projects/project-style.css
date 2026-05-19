@@ -79,7 +79,6 @@ body {
 .order2 p {
             color: var(--primary-blue);
             font: 1rem "Roboto", sans-serif;
-            flex: 1;
             min-width: 0;
 }
 
@@ -88,16 +87,18 @@ body {
 .order2 img {
             width: 80%;
             height: auto;
-            display: block;
-            flex: 1;
             min-width: 0;
 }
 
 .order1 {
+            flex: 1;
+            display: block;
             order: 1;
 }
 
 .order2 {
+            flex: 1;
+            display: block;
             order: 2;
 }
 
