@@ -109,19 +109,11 @@ body {
             min-width: 0;
 }
 
-.p-even {
+.order1 {
             order: 1;
 }
 
-.img-even {
+.order2 {
             order: 2;
-}
-
-.p-odd {
-            order: 2;
-}
-
-.img-odd {
-            order: 1;
 }
 
