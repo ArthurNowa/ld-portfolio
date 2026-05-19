@@ -89,14 +89,14 @@ body {
             align-items: center;
 }
 
-.step p {
+.step div p {
             color: var(--primary-blue);
             font: 1rem "Roboto", sans-serif;
             flex: 1;
             min-width: 0;
 }
 
-.step img {
+.step img, .step div img {
             width: 80%;
             height: auto;
             display: block;
