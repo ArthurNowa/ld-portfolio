@@ -14,9 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <ul class="nav-links" id="navMenu">
                 <li><a href="${path_to_root}index.html">Accueil</a></li>
-                <li><a href="${path_to_root}about.html">À propos</a></li>
                 <li><a href="${path_to_root}projects.html">Projets</a></li>
-                <li><a href="${path_to_root}skills.html">Compétences</a></li>
+                <li><a href="${path_to_root}about.html">Mon profil</a></li>
                 <li><a href="${path_to_root}contact.html">Contact</a></li>
             </ul>
         </div>
