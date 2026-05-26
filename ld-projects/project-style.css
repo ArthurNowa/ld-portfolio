@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 body {
-            font-family: 'Lexend', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: var(--red-brown);
 }
 
@@ -67,6 +67,25 @@ body {
 }
 
 /*--------------------------------------------------------------*/
+
+
+.recap {
+            padding: 2em 8em;
+}
+
+.recap h3 {
+            color: #f4ffff;
+}
+
+.recap ul li {
+            color: var(--primary-blue);
+            font: 1rem "Roboto", sans-serif;
+            min-width: 0;
+}
+
+
+/*--------------------------------------------------------------*/
+
 
 .step {
             padding: 2em 5em;
