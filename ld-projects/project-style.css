@@ -70,15 +70,15 @@ body {
 
 
 .recap {
-            padding: 4em 10em;
+            padding: 3em 12em;
 }
 
-.recap h3 {
+.recap h2 {
             color: #f4ffff;
 }
 
 .recap ul {
-            padding: 2em 5em;
+            padding: 1em 2em;
 }
 
 .recap ul li {
