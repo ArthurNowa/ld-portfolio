@@ -46,38 +46,3 @@ function resetAutoSlide() {
     startAutoSlide();
 }
 
-// Hamburger menu toggle
-function toggleMenu() {
-    const navMenu = document.getElementById('navMenu');
-    const hamburger = document.querySelector('.hamburger');
-    
-    if (navMenu) {
-        navMenu.classList.toggle('active');
-    }
-    if (hamburger) {
-        hamburger.classList.toggle('active');
-    }
-}
-
-// Close menu when a link is clicked
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            const navMenu = document.getElementById('navMenu');
-            const hamburger = document.querySelector('.hamburger');
-            if (navMenu) {
-                navMenu.classList.remove('active');
-            }
-            if (hamburger) {
-                hamburger.classList.remove('active');
-            }
-        });
-    });
-
-    // Initialize carousel
-    if (slides.length > 0) {
-        showSlide(currentSlide);
-        startAutoSlide();
-    }
-});
