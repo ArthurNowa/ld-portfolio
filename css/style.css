@@ -94,19 +94,11 @@ body {
     justify-content: center;
 }
 
-/*.hero h1 {
-    font-size: 3.5rem;
-    color: white;
-    margin-bottom: 1rem;
+.hero h2 {
+    font-size: 2rem;
+    color: #f4f4f4;
     font-weight: 700;
 }
-
-.hero h3 {
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}*/
 
 .hero p {
     font-size: 0.8rem;
