@@ -18,6 +18,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--dark-gray);
+    background-color: var(--red-brown);
 }
 
 .container {
@@ -304,7 +305,6 @@ footer {
     color: white;
     padding: 2rem;
     text-align: center;
-    margin-top: 3rem;
 }
 
 /* Responsive */
