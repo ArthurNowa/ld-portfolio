@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos - Portfolio Level Design</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        #cv-section { padding: 2rem 2rem 1rem 2rem;
+                      justify-content: center; }
+    </style>
 </head>
 <body>
     <script src="js/navbar.js"></script>
@@ -12,7 +16,7 @@
     <main>
         <header class="hero">
         <div class="hero-content">
-            <p class="subtitle">Level Designer / Technical Level Designer junior, avec un background en développement logiciel</p>
+            <h2 class="subtitle">Level Designer / Technical Level Designer junior, avec un background en développement logiciel</h2>
         </header>
 
         <section class="hero-content">
@@ -121,9 +125,16 @@
         </section>
 
 
-        <h1>Mon CV</h1>
-        
-        <embed src="documents/CV_2026-03-29_Arthur_Nowakowski.pdf" width="720" height="1080" type="application/pdf">
+        <section id="cv-section">
+            <div class="container">
+                <h2>CV détaillé</h2>
+                <p>
+                    Pour consulter mon parcours complet, mes expériences et mes compétences en détail, vous pouvez voir ou télécharger mon CV ci-dessous.
+                </p>
+                <embed src="documents/CV_2026-03-29_Arthur_Nowakowski.pdf" width="720" height="1080" type="application/pdf">
+                <a href="documents/CV_2026-03-29_Arthur_Nowakowski.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
+            </div>
+        </section>
         
     </main>
 
