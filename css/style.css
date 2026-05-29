@@ -39,8 +39,9 @@ body {
 .navbar .container {
     display: flex;
     justify-content: space-between;
+    gap: 10%
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
 }
 
 .logo h2 {
@@ -57,8 +58,8 @@ body {
 
 .nav-links {
     display: flex;
+    justify-content: space-between;
     list-style: none;
-    gap: 2rem;
 }
 
 .nav-links.active {
