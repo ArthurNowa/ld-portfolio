@@ -91,8 +91,8 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
-    padding: 2rem 2rem 1rem 2rem;
-    min-height: 200px;
+    padding: 1rem 2rem 1rem 2rem;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ body {
 .hero p {
     font-size: 0.8rem;
     text-align: left;
-    margin: 2rem;
+    margin: 1rem;
     opacity: 0.9;
     color: #f4f4f4;
 }
