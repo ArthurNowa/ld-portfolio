@@ -72,6 +72,10 @@ body {
     gap: 0;
 }
 
+.nav-links li {
+    padding-left: 4em;
+}
+    
 .nav-links a {
     color: white;
     text-decoration: none;
