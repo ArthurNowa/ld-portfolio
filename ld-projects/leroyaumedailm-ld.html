@@ -18,7 +18,7 @@
     <div class="presentation">
         <div class="left">
             <h3>Capture d'écran du jeu</h3>
-            <img src="../images/LRA/LRA_screenshot.jpg" alt="Capture d'écran du jeu Le Royaume d'Ailm" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/LRA/scan-carte-ailm_papier.jpg" alt="Dessin papier de la carte générale du Royaume d'Ailm" id="carte-papier" onclick="openImageZoom(this.src, this.alt)">
         </div>
         <div class="right">
             <h3>Vidéo de présentation du projet par Alten</h3>
@@ -33,8 +33,8 @@
                 <p>
                     Dans le cadre de la <b>sensibilisation au parcours de soins des grands brûlés</b>, l'association <b>Burns & Smiles</b> a lancé le projet de créer un <b>jeu éducatif</b> visant à accompagner les <b>victimes de brûlures</b> (et notamment les <b>jeunes enfants</b>) avec l'aide d'<b>Alten</b>.<br>
                     J'ai eu la chance de participer à ce projet dès ses prémices en tant que Game Designer puis Level Designer entre Juillet 2024 et Avril 2026, étant <b>consultant chez Alten</b> et en attente de mission à ce moment-là.<br>
-                    J'ai ainsi pu contribué à la <b>conceptualisation du jeu</b>et à son scénario, avant de devenir responsable du <b>design des cartes</b> de l'aventure une fois le concept et les outils définis.<br>
-                    Afin de ne pas mélanger les parties game et level design sur lesquelles j'ai travaillé, je ne vais parler ici que de la partie level design en évoquant la conception des cartes, la section sur le game design effectué en amont étant trouvable sur <a href="leroyaumedailm-gd.html">cette page</a>.
+                    J'ai ainsi pu contribué à la <b>conceptualisation du jeu</b> et à son scénario, avant de devenir responsable du <b>design des cartes</b> de l'aventure une fois le concept et les outils définis.<br>
+                    Afin de ne pas mélanger les parties game et level design sur lesquelles j'ai travaillé, je ne vais parler ici que de la partie <b>level design</b> en évoquant la conception des cartes, la section sur le <b>game design</b> effectué en amont étant trouvable sur <a href="leroyaumedailm-gd.html">cette page</a>.
                 </p>
             </div>
             <img src="https://img.20mn.fr/8YsJQya6RVq7uB2zPCli3Sk/1444x920_laurent-gaudens-fondateur-de-l-association-burns-and-smiles-a-cote-de-l-affiche-officielle-du-jeu-le-royaume-d-ailm" alt="Prototype de la route du circuit Nevers GP" class="order2" onclick="openImageZoom(this.src, this.alt)">
@@ -44,27 +44,25 @@
             <div class="order2">
                 <h2>Contraintes et objectifs</h2>
                 <p>
-                    Jeu pour enfants en situation potentiellement compliquée, donc difficulté basse.<br>
-                    Histoire et aventure linéaires --> peu d'exploration et de cul-de-sac<br>
-                    Respect du scénario et de l'ambiance du jeu<br>
+                    Ce jeu étant destiné à un <b>public jeune</b>, et potentiellement avec une <b>mobilité réduite</b> et des <b>traumatismes</b> liés à leur accident, il est primordial que la <b>difficulté</b> générale soit très accessible</b> afin que <b>chaque joueur</b> puisse <b>compléter l'histoire</b>.<br>
+                    De plus, l'histoire ayant été réfléchie et travaillée en amont en suivant les directives des <b>soignants et psychologues</b> quant à ce qu'il est possible de dire et montrer, il faudra donc bien évidemment que les cartes <b>respectent</b> le plus fidèlement possible le <b>scénario</b> et les ambiances décrites dans ce dernier.<br>
+                    De même, étant donné que cette même histoire joue un rôle crucial dans ce jeu, nous avons prévu une aventure plutôt <b>linéaire</b>, et avec <b>peu d'exploration</b> et de quêtes secondaires, afin d'éviter de perdre l'attention du joueur.
                 </p>
             </div>
-            <img src="../images/placeholder.jpg" alt="Prototype de la route du circuit Nevers GP" class="order1" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/placeholder.jpg" alt="placeholder" class="order1" onclick="openImageZoom(this.src, this.alt)">
         </div>
         
         <div class="step">
             <div class="order1">
                 <h2>Préproduction : paper design et choix de design</h2>
                 <p>
-                    carte générale du monde ;
-                    dessins papier des zones individuelles ;
-                    identification des lieux importants, événements, transitions ;
-                    cartes de route divisées en sections, zones de repos entre chaque section : gestion de la vie et endurance ;
-                    rythme : exploration → effort → repos → reprise ;
-                    progression lisible pour un jeune public.
+                    Avant d'entrer dans le vif de la production des cartes, j'ai d'abord commencé par <b>dessiner</b> et <b>designer</b> les cartes sur <b>papier</b>, afin de me permettre d'<b>itérer rapidement</b> sur le contenu, et de <b>visualiser l'ensemble de l'univers du jeu</b> pour que le tout reste <b>cohérent</b> au fil de l'aventure.<br>
+                    J'ai d'abord commencé par esquisser la <b><a href="#carte-papier">carte globale du monde</a></b> pour définir la <b>taille</b>, la <b>forme</b> et la <b>géographie</b> du jeu, avant d'entamer les croquis des <b>cartes individuelles</b>.<br>
+                    Sur chacune des cartes papier, j'ai donc défini le <b>type d'environnement</b>, puis ai placé les <b>lieux importants</b>, <b>évènements</b> et <b>transitions</b> permettant de donner le <b>contexte du jeu</b>, et de préparer une <b>guideline</b> pour la conception des cartes par la suite.<br>
+                    Aussi, afin de gérer le <b>rythme</b> du jeu et d'appuyer la notion de <b>soin progressif</b> du personnage, nous avons défini que les <b>distances</b> entre les différents villages seraient <b>croissantes</b>, et que chacune de ces routes serait découpée en <b>4 sections</b> de taille équivalente, permettant au joueur de <b>faire une pause</b> et de <b>restaurer la vie et l'endurance</b> de son personnage à chacune des "<b>zones de repos</b>" intermédiaires.
                 </p>
             </div>
-            <img src="../images/placeholder.jpg" alt="Prototype de la route du circuit Nevers GP" class="order2" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/LRA/scan-route_papier.jpg" alt="placeholder" class="order2" onclick="openImageZoom(this.src, this.alt)">
         </div>
         
         <div class="step">
@@ -78,7 +76,7 @@
                     intérêt pour garder une vision globale.
                 </p>
             </div>
-            <img src="../images/placeholder.jpg" alt="Prototype de la route du circuit Nevers GP" class="order1" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/placeholder.jpg" alt="placeholder" class="order1" onclick="openImageZoom(this.src, this.alt)">
         </div>
 
         <div class="step">
@@ -96,7 +94,7 @@
                     obtention d’une version définitive avant intégration.
                 </p>
             </div>
-            <img src="../images/placeholder.jpg" alt="Prototype de la route du circuit Nevers GP" class="order2" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/placeholder.jpg" alt="placeholder" class="order2" onclick="openImageZoom(this.src, this.alt)">
         </div>
         
         <div class="step">
@@ -111,7 +109,7 @@
                     validation gameplay.
                 </p>
             </div>
-            <img src="../images/placeholder.jpg" alt="Prototype de la route du circuit Nevers GP" class="order1" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/placeholder.jpg" alt="placeholder" class="order1" onclick="openImageZoom(this.src, this.alt)">
         </div>
         
         <div class="step">
@@ -127,7 +125,7 @@
                     importance de tester tôt dans UE5.
                 </p>
             </div>
-            <img src="../images/placeholder.jpg" alt="Prototype de la route du circuit Nevers GP" class="order2" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/placeholder.jpg" alt="placeholder" class="order2" onclick="openImageZoom(this.src, this.alt)">
         </div>
 
         <div class="step">
@@ -140,7 +138,7 @@
                     meilleure capacité à produire les niveaux suivants.
                 </p>
             </div>
-            <img src="../images/placeholder.jpg" alt="Prototype de la route du circuit Nevers GP" class="order1" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/placeholder.jpg" alt="placeholder" class="order1" onclick="openImageZoom(this.src, this.alt)">
         </div>
     </div>
 </body>
