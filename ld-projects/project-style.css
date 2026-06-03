@@ -55,13 +55,13 @@ body {
 
 .left img,
 .right img {
-    width: 80%;
+    width: 85%;
     height: auto;
     display: block;
 }
 
 .right iframe {
-    width: 80%;
+    width: 85%;
     aspect-ratio: 16 / 9;
     display: block;
 }
@@ -114,8 +114,10 @@ body {
 
 .step img,
 .order1 img,
-.order2 img {
-            width: 80%;
+.order2 img { 
+            max-width: 400px;
+            max-height: 250px;
+            width: auto;
             height: auto;
             min-width: 0;
 }
