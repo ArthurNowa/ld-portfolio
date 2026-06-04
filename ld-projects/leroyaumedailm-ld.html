@@ -30,7 +30,7 @@
         <h2>Vue d'ensemble</h2>
         <ul>
             <li><b><u>Projet :</u></b> "Le Royaume d'Ailm", jeu RPG mobile à but thérapeutique visant à accompagner les enfants brûlés dans leur parcours de soins</li>
-            <li><b><u>Rôle(s) :</u></b> Concept-artist, Level Designer, Référent assets graphiques</li>
+            <li><b><u>Rôle(s) :</u></b> Level Designer, Technical Level Designer, Référent assets graphiques</li>
             <li><b><u>Responsabilités :</u></b> Préparer le workflow de level design, conceptualiser l'univers du jeu, designer les cartes, tester et identifier les bugs pour les corriger</li>
             <li><b><u>Outils :</u></b> Unreal Engine 5.4, Tiled, TiledIntegration, Paint, Microsoft Teams, Word, Excel</li>
         </ul>
@@ -66,7 +66,7 @@
             <div class="order1">
                 <h2>Préproduction : paper design et choix de design</h2>
                 <p>
-                    Avant d'entrer dans le vif de la production des cartes, j'ai d'abord commencé par <b>dessiner</b> et <b>designer</b> les cartes sur <b>papier</b>, afin de me permettre d'<b>itérer rapidement</b> sur le contenu, et de <b>visualiser l'ensemble de l'univers du jeu</b> pour que le tout reste <b>cohérent</b> au fil de l'aventure.<br>
+                    Avant d'entrer dans le vif de la production des cartes, j'ai d'abord commencé par <b>esquisser</b> et <b>designer</b> les cartes sur <b>papier</b>, afin de me permettre d'<b>itérer rapidement</b> sur le contenu, et de <b>visualiser l'ensemble de l'univers du jeu</b> pour que le tout reste <b>cohérent</b> au fil de l'aventure.<br>
                     J'ai d'abord commencé par esquisser la <b><a href="#carte-papier">carte globale du monde</a></b> pour définir la <b>taille</b>, la <b>forme</b> et la <b>géographie</b> du jeu, avant d'entamer les croquis des <b>cartes individuelles</b>.<br>
                     Sur chacune des cartes papier, j'ai donc défini le <b>type d'environnement</b>, puis ai placé les <b>lieux importants</b>, <b>évènements</b> et <b>transitions</b> permettant de donner le <b>contexte du jeu</b>, et de préparer une <b>guideline</b> pour la conception des cartes par la suite.<br>
                     Aussi, afin de gérer le <b>rythme</b> du jeu et d'appuyer la notion de <b>soin progressif</b> du personnage, nous avons défini que les <b>distances</b> entre les différents villages seraient <b>croissantes</b>, et que chacune de ces routes serait découpée en <b>4 sections</b> de taille équivalente, permettant au joueur de <b>faire une pause</b> et de <b>restaurer la vie et l'endurance</b> de son personnage à chacune des "<b>zones de repos</b>" intermédiaires.
@@ -93,7 +93,7 @@
                 <p>
                     C'est via le logiciel <b>Tiled</b> que j'ai entamé le design pur des cartes, après avoir trouvé des <b>ressources graphiques cohérentes</b> avec l'univers du jeu et en adéquation avec les <b>contraintes du projet</b> et les <b>concept-arts</b> précédemment réalisés.<br>
                     Bien qu'il ait fallu légèrement <b>adapter</b> les proportions de la carte, son orientation, ou les éléments de décor lors de la transition à un support quadrillé en pixel art, le fait d'avoir au préalable conceptualisé les cartes sur papier m'a grandement facilité la tâche, me permettant de me focaliser majoritairement sur les <b>contraintes de gameplay</b> plutôt que sur l'aspect créatif.<br>
-                    Pour cela j'ai d'abord commencé par modeler grossièrement les chemins aux bonnes dimensions et placer les points de repères, avant d'itérer progressivement pour ajouter les bordures de carte, les éléments de décoration, et ajuster le tout en portant une attention particulière aux détails, afin de créer un univers à la fois <b>vivant et immersif</b>, tout en suivant strictement les <b>lignes directrices</b> du concept-art et du level flow chart.<br>
+                    Pour cela j'ai d'abord modelé les chemins aux bonnes dimensions et placer les points de repères, avant d'itérer progressivement pour ajouter les bordures de carte, les éléments de décoration, et ajuster le tout en portant une attention particulière aux détails, afin de créer un univers à la fois <b>vivant et immersif</b>, tout en suivant strictement les <b>lignes directrices</b> du concept-art et du level flow chart.<br>
                     Ainsi, même sans se soucier des collisions, des cinématiques ou des PNJ, cette partie du level design me permet de poser le <b>décor</b> des cartes, et d'avoir un <b>support définitif</b> sur lequel travailler ensuite après son intégration sous Unreal Engine.
                 </p>
             </div>
@@ -107,7 +107,7 @@
                     L'étape suivante consiste à <b>importer les cartes</b> sous <b>Unreal Engine 5</b>, or la gestion des tilemaps 2D étant très mal optimisée, nous avons contourné le problème de fluidité en exportant chaque carte au format png via Tiled pour ensuite l'utiliser en tant qu'<b>image de fond 2D</b> sous Unreal Engine, par dessus laquelle nous ajoutons ensuite les <b>animations</b>, isolées dans une tilemap réduite au préalable, via un import TiledIntegration.<br>
                     Ensuite, afin de rendre la carte <b>jouable</b>, il faut ajouter les <b>collisions</b>, avant de gérer le "<b>texture sorting</b>" pour compléter l'<b>immersion</b> et donner l'<b>impression de profondeur</b> à l'aide d'objets également exportés sous forme de <b>préfabriqués</b> au format png.<br>
                     Selon les besoins du niveau, j'ai également pu créer et ajouter des <b>Blueprints</b> pour gérer les objets interactifs tels que les ponts ou les panneaux.<br>
-                    De même pour les <b>PNJ</b>, <b>quêtes</b>, <b>cinématiques</b> et autres <b>évènements</b> propres au jeu, bien que ces parties aient en grande partie prise en charge par d'autres membres de l'équipe. De mon côté, je me concentrais principalement sur la <b>conception</b>, l’<b>intégration</b> et la <b>validation</b> des cartes, un rôle d’autant plus important que j’ai longtemps été le seul level designer du projet.
+                    De même pour les <b>PNJ</b>, <b>quêtes</b>, <b>cinématiques</b> et autres <b>évènements</b> propres au jeu, bien que ces parties aient été en grande partie prise en charge par d'autres membres de l'équipe. De mon côté, je me concentrais principalement sur la <b>conception</b>, l’<b>intégration</b> et la <b>validation</b> des cartes, un rôle d’autant plus important que j’ai longtemps été le seul level designer du projet.
                 </p>
             </div>
             <img src="../images/LRA/LRA_UE_collisions.png" alt="capture de l'éditeur Unreal Engine avec les collisions" class="order1" onclick="openImageZoom(this.src, this.alt)">
