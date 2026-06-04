@@ -55,8 +55,8 @@ body {
 
 .left img,
 .right img {
-    max-width: 912px;
-    max-height: 513px;
+    max-width: 800px;
+    max-height: 450px;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -64,8 +64,8 @@ body {
 }
 
 .right iframe {
-    width: 912px;
-    height: 513px;
+    width: 800px;
+    height: 450px;
     display: block;
 }
 
@@ -118,8 +118,8 @@ body {
 .step img,
 .order1 img,
 .order2 img { 
-            max-width: 912px;
-            max-height: 513px;
+            max-width: 800px;
+            max-height: 450px;
             width: auto;
             height: auto;
             object-fit: contain;
