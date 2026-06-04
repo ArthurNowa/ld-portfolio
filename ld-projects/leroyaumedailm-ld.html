@@ -79,8 +79,8 @@
             <div class="order2">
                 <h2>Level flow chart</h2>
                 <p>
-                    Afin d'accompagner les paper designs, j'ai également construit en parallèle des "level flow charts" reprenant la chronologie de chaque carte, en détaillant les évènements et transitions rencontrés, et en spécifiant les différentes étapes du niveau.<br>
-                    Ces deux supports combinés permettent ainsi de définir une base saine et stable sur lesquelles je pourrais ensuite m'appuyer lors de la phase de phase de conception des cartes sans risquer de passer à côté d'éléments importants du scénario.<br>
+                    Afin d'accompagner les paper designs, j'ai également construit en parallèle des "<b>level flow charts</b>" reprenant la <b>chronologie de chaque carte, en détaillant les <b>évènements</b> et <b>transitions rencontrés</b>, et en spécifiant les différentes <b>étapes du niveau</b>.<br>
+                    Ces deux supports combinés permettent ainsi de définir une <b>base saine</b> et <b>stable</b> sur laquelle je pourrais ensuite m'appuyer lors de la phase de <b>conception</b> des cartes sans risquer de passer à côté d'éléments importants du scénario.<br>
                 </p>
             </div>
             <img src="../images/LRA/route_level-flow-chart.png" alt="Diagramme de flux d'une carte du jeu" class="order1" onclick="openImageZoom(this.src, this.alt)">
@@ -90,23 +90,23 @@
             <div class="order1">
                 <h2>Conception</h2>
                 <p>
-                    C'est via le logiciel Tiled que j'ai entamé le design pur des cartes, après avoir trouvé des ressources graphiques cohérentes avec l'univers du jeu et en adéquation avec les contraintes du projet et les concept-arts précédemment réalisés.<br>
-                    Bien qu'il ai fallu légèrement adapter les proportions de la carte, son orientation, ou les éléments de décor lors de la transition à un support quadrillé en pixel art, le fait d'avoir au préalable conceptualisé les cartes sur papier m'a grandement facilité la tâche, me permettant de me focaliser majoritairement sur les contraintes de gameplay plutôt que sur l'aspect créatif.<br>
-                    Pour cela j'ai d'abord commencé par modeler grossièrement les chemins aux bonnes dimensions et placer les points de repères, avant d'itérer progressivement pour ajouter les bordures de carte, les éléménts de décoration, et ajuster le tout en portant une attention particulière aux détails, afin de créer un univers à la fois vivant et immersif, tout en suivant strictement les lignes directrices du concept-art et du level flow chart.<br>
-                    Ainsi, même sans se soucier des collisions, des cinématiques ou des PNJ, cette partie du level design me permet de poser le décor des cartes, et d'avoir un support définif sur lequel travailler ensuite après son intégration sous Unreal Engine.
+                    C'est via le logiciel <b>Tiled</b> que j'ai entamé le design pur des cartes, après avoir trouvé des <b>ressources graphiques cohérentes</b> avec l'univers du jeu et en adéquation avec les <b>contraintes du projet</b> et les <b>concept-arts</b> précédemment réalisés.<br>
+                    Bien qu'il ai fallu légèrement <b>adapter</b> les proportions de la carte, son orientation, ou les éléments de décor lors de la transition à un support quadrillé en pixel art, le fait d'avoir au préalable conceptualisé les cartes sur papier m'a grandement facilité la tâche, me permettant de me focaliser majoritairement sur les <b>contraintes de gameplay</b> plutôt que sur l'aspect créatif.<br>
+                    Pour cela j'ai d'abord commencé par modeler grossièrement les chemins aux bonnes dimensions et placer les points de repères, avant d'itérer progressivement pour ajouter les bordures de carte, les éléménts de décoration, et ajuster le tout en portant une attention particulière aux détails, afin de créer un univers à la fois <b>vivant et immersif</b>, tout en suivant strictement les <b>lignes directrices</b> du concept-art et du level flow chart.<br>
+                    Ainsi, même sans se soucier des collisions, des cinématiques ou des PNJ, cette partie du level design me permet de poser le <b>décor</b> des cartes, et d'avoir un <b>support définif</b> sur lequel travailler ensuite après son intégration sous Unreal Engine.
                 </p>
             </div>
-            <img src="../images/LRA/capture_design_tiled.png" alt="Capture d'écran du design d'une carte réalisé sur Tiled" class="order2" onclick="openImageZoom(this.src, this.alt)">
+            <img src="../images/LRA/capture_design_Tiled.png" alt="Capture d'écran du design d'une carte réalisé sur Tiled" class="order2" onclick="openImageZoom(this.src, this.alt)">
         </div>
         
         <div class="step">
             <div class="order2">
                 <h2>Intégration, Collisions</h2>
                 <p>
-                    L'étape suivante consiste à importer les cartes sous Unreal Engine, or la gestion des tilemaps 2D étant très mal optimisée, nous avons contourné le problème de fluidité en important les cartes sous forme d'images, par dessus lesquelles nous ajoutons les animations isolées via un import TiledIntegration quand nécessaire.<br>
-                    Ensuite, afin de rendre la carte jouable, il faut ajouter les collisions, avant de gérer le "texture sorting" pour compléter l'immersion et donner l'impression de profondeur à l'aide d'objets sous forme de préfabriqués au format png.<br>
-                    Selon les besoins du niveau, j'ai également pu créer et ajouter des Blueprints pour gérer les objets interactifs tels que les ponts ou les panneaux.<br>
-                    De même pour les PNJ, quêtes, cinématiques et autres évènements propres au jeu, bien que ces parties soient gérées en grande partie par les autres membres de l'équipe, la partie design me prenant déjà beaucoup de temps à elle seule, sachant que j'ai longtemps été le seul level designer pendant la période à laquelle j'ai travaiilé sur ce projet.
+                    L'étape suivante consiste à <b>importer les cartes</b> sous <b>Unreal Engine 5</b>, or la gestion des tilemaps 2D étant très mal optimisée, nous avons contourné le problème de fluidité en exportant chaque carte au format png via Tiled pour ensuite l'utiliser en tant qu'<b>image de fond 2D</b> sous Unreal Engine, par dessus laquelle nous ajoutons ensuite les <b>animations</b>, isolées dans une tilemap réduite au préalable, via un import TiledIntegration.<br>
+                    Ensuite, afin de rendre la carte <b>jouable</b>, il faut ajouter les <b>collisions</b>, avant de gérer le "<b>texture sorting</b>" pour compléter l'<b>immersion</b> et donner l'<b>impression de profondeur</b> à l'aide d'objets également exportés sous forme de <b>préfabriqués</b> au format png.<br>
+                    Selon les besoins du niveau, j'ai également pu créer et ajouter des <b>Blueprints</b> pour gérer les objets interactifs tels que les ponts ou les panneaux.<br>
+                    De même pour les <b>PNJ</b>, <b>quêtes</b>, <b>cinématiques</b> et autres <b>évènements</b> propres au jeu, bien que ces parties soient gérées en grande partie par les autres membres de l'équipe, la partie design me prenant déjà beaucoup de temps à elle seule, sachant que j'ai longtemps été le seul level designer sur le projet au cours de ma mission.
                 </p>
             </div>
             <img src="../images/placeholder.jpg" alt="placeholder" class="order1" onclick="openImageZoom(this.src, this.alt)">
@@ -116,9 +116,9 @@
             <div class="order1">
                 <h2>Tests, itérations et enseignements</h2>
                 <p>
-                    Le moteur Unreal Engine nous offrant un simulateur permettant de lancer et tester directement les cartes dans la fenêtre de l'éditeur, cela a permis d'itérer facilement et rapidement pour corriger les premiers problèmes de collisions ou de textures en jeu.<br>
-                    De plus, des builds réguliers ont été réalisés tout au long du projet, afin d'ajouter progressivement les fonctionnalités et cartes au sein de l'application, et de pouvoir faire tester le jeu à des joueurs externes au projet pour obtenir des retours d'expérience de personnes ayant un point de vue extérieur, ce qui fut très utile pour identifier les problèmes et axes d'amélioration.<br>
-                    Ces tests réguliers nous ont permis de corriger continuellement les défauts tout en avançant en parallèle sur le contenu, nous permettant de gagner en expérience et en productivité, en évitant de reproduire les mêmes erreurs plusieurs fois juqsu'à devoir tout refaire si ce contrôle continu n'avait pas été fait dès le départ.<br>
+                    Le moteur Unreal Engine nous offrant un <b>simulateur</b> permettant de lancer et <b>tester directement</b> les cartes dans la fenêtre de l'éditeur, cela a permis d'<b>itérer facilement et rapidement</b> pour <b>corriger les premiers problèmes</b> de collisions ou de textures en jeu.<br>
+                    De plus, des <b>builds réguliers</b> ont été réalisés tout au long du projet, afin d'<b>ajouter progressivement les nouvelles fonctionnalités et cartes</b> au sein de l'application, et de pouvoir <b>faire tester</b> le jeu à des <b>joueurs externes</b> au projet pour obtenir des <b>retours d'expérience</b> de personnes ayant un <b>point de vue extérieur</b>, ce qui fut très utile pour <b>identifier les problèmes et axes d'amélioration</b>.<br>
+                    Ces <b>tests réguliers</b> nous ont permis de <b>corriger continuellement</b> les défauts tout en <b>avançant</b> en parallèle sur le <b>contenu</b>, nous permettant de gagner en <b>expérience</b> et en <b>productivité</b>, en nous évitant de reproduire les mêmes erreurs plusieurs fois et de devoir tout refaire, dans le cas où ce <b>contrôle continu</b> n'avait pas été fait dès le départ.<br>
                 </p>
             </div>
             <img src="../images/placeholder.jpg" alt="placeholder" class="order2" onclick="openImageZoom(this.src, this.alt)">
@@ -128,9 +128,9 @@
             <div class="order2">
                 <h2>Résultats</h2>
                 <p>
-                    A l'issue de ce projet, nous avons pu stabiliser le workflow afin d'optimiser l'efficacité de l'équipe et améliorer sa capacité à produire du contenu (que ce soit au niveau des cartes ou des fonctionnalités).<br>
-                    A ce jour, j'ai ainsi pu produire et intégrer de mon côté près d'une quinzaine de cartes pour l'histoire principale et les mini-jeux, toutes jouables, en plus des concept arts et level flow charts préparés d'avance pour designer la suite du jeu.<br>
-                    J'ai également pu former des collègues qui m'ont accompagné puis ont pris ma relève aux outils ainsi qu'à mes méthodes et idées de design afin de poursuivre le projet dans de bonnes conditions pour limiter au maximum les pertes de temps et conserver une certaine cohérence tout au long de la phase de conception du jeu.
+                    A l'issue de ce projet, nous avons pu <b>stabiliser le workflow</b> afin d'<b>optimiser l'efficacité de l'équipe</b> et <b>améliorer sa capacité à produire du contenu</b> (que ce soit au niveau des cartes ou des fonctionnalités).<br>
+                    A ce jour, j'ai ainsi pu produire et intégrer de mon côté près d'une <b>quinzaine de cartes</b> pour l'histoire principale et les mini-jeux, toutes jouables, en plus des concept arts et level flow charts préparés d'avance pour designer la suite du jeu.<br>
+                    J'ai également pu <b>former des collègues</b>, qui m'ont accompagné puis ont pris ma relève, aux outils ainsi qu'à mes méthodes et idées de design afin de poursuivre le projet dans de bonnes conditions pour limiter au maximum les pertes de temps et conserver une certaine <b>cohérence</b> tout au long de la phase de conception du jeu.
                 </p>
             </div>
             <img src="../images/placeholder.jpg" alt="placeholder" class="order1" onclick="openImageZoom(this.src, this.alt)">
