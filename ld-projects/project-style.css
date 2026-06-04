@@ -64,11 +64,8 @@ body {
 }
 
 .right iframe {
-    max-width: 912px;
-    max-height: 513px;
-    width: auto;
-    height: auto;
-    aspect-ratio: 16 / 9;
+    width: 912px;
+    height: 513px;
     display: block;
 }
 
