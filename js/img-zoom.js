@@ -116,7 +116,7 @@ function initImageModal() {
     });
 
     document.addEventListener('mousemove', function(e) {
-        if (isDragging && currentZoom > 1) {
+        if (isDragging) {
             offsetX = e.clientX - dragStartX;
             offsetY = e.clientY - dragStartY;
             updateImageTransform();
