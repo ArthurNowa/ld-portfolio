@@ -15,7 +15,7 @@ function initImageModal() {
     imageModal.innerHTML = `
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <img id="modalImage" src="" alt="">
+            <img id="modalImage" draggable="false" src="" alt="">
             <div class="modal-zoom-controls">
                 <button id="resetZoom" class="zoom-btn">Reset</button>
             </div>
