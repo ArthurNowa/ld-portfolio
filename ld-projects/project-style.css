@@ -5,6 +5,10 @@ body {
             background-color: var(--red-brown);
 }
 
+img:hover {
+            cursor: zoom-in;
+}
+
 /*--------------------------------------------------------------*/
 
 .header {
