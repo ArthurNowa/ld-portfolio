@@ -6,6 +6,10 @@
     <title>À propos - Portfolio Level Design</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        section {
+            display: block;
+            padding: 3em 4em;
+        }
         .hero {
             padding-top: 0em;
             padding-bottom: 0em;
@@ -25,9 +29,9 @@
             padding-left: 3em;
         }
         #whoami p {
-            padding: 2rem;
+            padding: 1em 2em;
             color: var(--dark-gray);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 400;
             min-width: 0;
         }
@@ -61,23 +65,30 @@
             color: #f0f0ff;
             padding: 0em 3em;
         }
-        #cv-section {
-            padding: 2rem 2rem 1rem 2rem;
-            justify-content: center;
-        }
-        section {
-            display: block;
-            padding: 3em 4em;
-        }
         .timeline-item {
             display: grid;
             padding: 1em 4em;
         }
-        .timeline-item h3 {
+        .timeline-item h2 {
             color: white;
         }
-        .timeline-item h4 {
+        .timeline-item h3 {
             color: var(--dark-gray);
+            padding-left: 0.5em;
+        }
+        .timeline-item p {
+            font-size: 0.9rem;
+        }
+        #cv-section {
+            display: flex;
+            gap: 2em;
+            align-items: center;
+        }
+        .cv-prez p {
+            padding: 1em 1em;
+        }
+        .cv-prez .btn {
+            padding: 3em 5em;
         }
     </style>
 </head>
@@ -132,21 +143,21 @@
                     
                     <h3>💻 Orientés dev</h3>
                     <ul>
-                        <li><b>Programmation orientée objet | ⭐⭐⭐⭐☆</li>
-                        <li><b>Python | ⭐⭐⭐⭐☆</li>
-                        <li><b>Manipulation de données <i>(xml, regex)</i> | ⭐⭐⭐☆☆</li>
-                        <li><b>Développement Web | ⭐⭐⭐☆☆</li>
+                        <li><b>Programmation orientée objet</b> | ⭐⭐⭐⭐☆</li>
+                        <li><b>Python</b> | ⭐⭐⭐⭐☆</li>
+                        <li><b>Manipulation de données</b> <i>(xml, regex)</i> | ⭐⭐⭐☆☆</li>
+                        <li><b>Développement Web</b> | ⭐⭐⭐☆☆</li>
                     </ul>
                     
                     <p style="padding:2em">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
                     
                     <h3>⚙️ Compétences Générales</h3>
                     <ul>
-                        <li><b>Anglais - TOEIC 820/990 | ⭐⭐⭐⭐☆</li>
-                        <li><b>Logiciels de Bureautique <i>(Microsoft Excel/Word - Google Sheets/Docs)</i> | ⭐⭐⭐⭐☆</li>
-                        <li><b>Méthodes Agiles <i>(SCRUM / Kanban)</i> | ⭐⭐⭐☆☆</li>
-                        <li><b>Versioning Git | ⭐⭐⭐⭐☆</li>
-                        <li><b>Jira | ⭐⭐⭐☆☆</li>
+                        <li><b>Anglais - TOEIC 820/990</b> | ⭐⭐⭐⭐☆</li>
+                        <li><b>Logiciels de Bureautique</b> <i>(Microsoft Excel/Word - Google Sheets/Docs)</i> | ⭐⭐⭐⭐☆</li>
+                        <li><b>Méthodes Agiles</b> <i>(SCRUM / Kanban)</i> | ⭐⭐⭐☆☆</li>
+                        <li><b>Versioning Git</b> | ⭐⭐⭐⭐☆</li>
+                        <li><b>Jira</b> | ⭐⭐⭐☆☆</li>
                     </ul>
                 </div>
             </div>
@@ -171,23 +182,23 @@
             <h1>Mon Parcours</h1>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>Game & Level Designer</h3>
-                    <h4>Burns & Smiles, Alten | 2024 - 2026</h4>
+                    <h2>Game & Level Designer</h2>
+                    <h3>Burns & Smiles, Alten | 2024 - 2026</h3>
                     <p>Game designer puis Level designer pour le projet de jeu "Le Royaume d'Ailm"</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>Développeur DevOps Python</h3>
-                    <h4>Centrale Auchan, Alten | 2023</h4>
+                    <h2>Développeur DevOps Python</h2>
+                    <h3>Centrale Auchan, Alten | 2023</h3>
                     <p>Responsable d'applications de la production Auchan Retail France</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>Développeur Python</h3>
-                    <h4>Luminess, Faceel-IT | 2021 - 2022</h4>
+                    <h2>Développeur Python</h2>
+                    <h3>Luminess, Faceel-IT | 2021 - 2022</h3>
                     <p>Participation au processus de conversion de brevets pour l’USPTO au format XML</p>
                 </div>
                 <div class="timeline-item">
-                    <h3>Master IAGL</h3>
-                    <h4>Université de Lille 1 | 2015 - 2021</h4>
+                    <h2>Master IAGL</h2>
+                    <h3>Université de Lille 1 | 2015 - 2021</h3>
                     <p>Master informatique orienté génie logiciel</p>
                 </div>
             </div>
@@ -195,13 +206,15 @@
 
 
         <section id="cv-section">
-            <h1>Mon CV</h1>
-            <p>
-                Pour consulter mon parcours complet, mes expériences et mes compétences en détail, vous pouvez voir ou télécharger mon CV ci-dessous.<br>
-            </p>
+            <div class="cv-prez">
+                <h1>Mon CV</h1>
+                <p>
+                    Pour consulter mon parcours complet, mes expériences et mes compétences en détail,<br>
+                    vous pouvez voir mon CV ci-joint, ou le télécharger ci-dessous.
+                </p>
+                <a href="documents/CV_2026-03-29_Arthur_Nowakowski.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
+            </div>
             <embed src="documents/CV_2026-03-29_Arthur_Nowakowski.pdf" width="720" height="1080" type="application/pdf">
-            <br>
-            <a href="documents/CV_2026-03-29_Arthur_Nowakowski.pdf" class="btn btn-primary" download>Télécharger mon CV</a>
         </section>
         
     </main>
