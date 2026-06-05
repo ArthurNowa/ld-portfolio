@@ -11,7 +11,6 @@
             padding-bottom: 0em;
         }
         .presentation {
-            padding: 2em 5em;
             margin: 0 auto;
             width: 100%;
             display: flex;
@@ -49,7 +48,7 @@
             margin-left: 4em;
             font-weight: 400;
         }
-        .skills-content h1 {
+        h1 {
             color: var(--primary-green);
             text-shadow: 1px 1px 1px black;
             padding: 0.5em 0em;
@@ -59,12 +58,26 @@
             padding: 0.5em 1em;
         }
         .skills-content h3 {
-            color: #f0f0f5;
+            color: #f0f0ff;
             padding: 0em 3em;
         }
         #cv-section {
             padding: 2rem 2rem 1rem 2rem;
             justify-content: center;
+        }
+        section {
+            display: block;
+            padding: 3em 4em;
+        }
+        .timeline-item {
+            display: grid;
+            padding: 1em 4em;
+        }
+        .timeline-item h3 {
+            color: white;
+        }
+        .timeline-item h4 {
+            color: #f0f0ff;
         }
     </style>
 </head>
@@ -155,7 +168,7 @@
         </section>
         
         <section class="journey">
-            <h2>Mon Parcours</h2>
+            <h1>Mon Parcours</h1>
             <div class="timeline">
                 <div class="timeline-item">
                     <h3>Game & Level Designer</h3>
@@ -182,7 +195,7 @@
 
 
         <section id="cv-section">
-            <h2>CV détaillé</h2>
+            <h1>Mon CV</h1>
             <p>
                 Pour consulter mon parcours complet, mes expériences et mes compétences en détail, vous pouvez voir ou télécharger mon CV ci-dessous.<br>
             </p>
