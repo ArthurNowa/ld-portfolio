@@ -61,7 +61,7 @@ img:hover {
 
 .left img,
 .right img {
-            max-width: 720px;
+            max-width: 45vw;
             max-height: 405px;
             width: auto;
             height: auto;
