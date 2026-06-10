@@ -122,7 +122,9 @@ img:hover {
 
 .step img,
 .order1 img,
-.order2 img { 
+.order2 img,
+.order1 a,
+.order2 a { 
             max-width: 800px;
             max-height: 450px;
             width: auto;
