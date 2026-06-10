@@ -222,13 +222,12 @@ body {
 }
 
 .btn-disabled {
-    background-color: var(--dark-gray);
+    background-color: grey;
     color: white;
 }
 
 .btn-disabled:hover {
-    background-color: var(--dark-gray);
-    color: white;
+    cursor: not-allowed;
 }
 
 /* Featured Projects */
