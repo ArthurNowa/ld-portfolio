@@ -9,6 +9,10 @@ img:hover {
             cursor: zoom-in;
 }
 
+.img-link:hover {
+            cursor: pointer;
+}
+
 /*--------------------------------------------------------------*/
 
 .header {
