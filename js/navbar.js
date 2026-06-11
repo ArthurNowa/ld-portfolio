@@ -24,16 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.insertAdjacentHTML('afterbegin', navbarHTML);
 });
 
-function toggleMenu() {
-    const navMenu = document.getElementById('navMenu');
-    
-    if (navMenu) {
-        navMenu.classList.toggle('active');
-    }
-    if (hamburger) {
-        hamburger.classList.toggle('active');
-    }
-}
 
 // Close menu when a link is clicked
 document.addEventListener('DOMContentLoaded', function() {
